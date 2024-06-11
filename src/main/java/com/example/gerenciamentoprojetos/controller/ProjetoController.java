@@ -1,8 +1,7 @@
 package com.example.gerenciamentoprojetos.controller;
 
-
-import com.exemplo.demo.model.Projeto;
-import com.exemplo.demo.service.ProjetoService;
+import com.example.gerenciamentoprojetos.model.Projeto;
+import com.example.gerenciamentoprojetos.service.ProjetoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -39,3 +38,4 @@ public class ProjetoController {
         projetoService.deletarProjeto(id);
     }
 }
+
