@@ -1,7 +1,7 @@
-package controller;
+package com.example.gerenciamentoprojetos.controller;
 
-import com.exemplo.demo.model.Usuario;
-import com.exemplo.demo.service.UsuarioService;
+import com.example.gerenciamentoprojetos.model.Usuario;
+import com.example.gerenciamentoprojetos.service.UsuarioService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

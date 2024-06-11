@@ -1,0 +1,35 @@
+package com.example.gerenciamentoprojetos.service;
+
+import com.example.gerenciamentoprojetos.model.Usuario;
+import com.example.gerenciamentoprojetos.repository.UsuarioRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import java.util.List;
+
+@Service
+public class UsuarioService {
+    @Autowired
+    private UsuarioRepository usuarioRepository;
+
+    public Usuario criarUsuario(Usuario usuario) {
+        return usuarioRepository.save(usuario);
+    }
+
+    public List<Usuario> obterTodosUsuarios() {
+        return usuarioRepository.findAll();
+    }
+
+    public Usuario obterUsuarioPorId(Long id) {
+        return usuarioRepository.findById(id).orElse(null);
+    }
+
+    public Usuario atualizarUsuario(Long id, Usuario usuario) {
+        Usuario existente = usuarioRepository.findById(id).orElse(null);
+        if (existente != null) {
+            existente.setNome(usuario.getNome());
+            return usuarioRepository.save(existente);
+        }
+        return null;
+    }
+}

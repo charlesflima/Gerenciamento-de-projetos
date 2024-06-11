@@ -1,4 +1,4 @@
-package controller;
+package com.example.gerenciamentoprojetos.controller;
 
 
 import com.exemplo.demo.model.Projeto;

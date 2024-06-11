@@ -1,7 +1,7 @@
-package controller;
+package com.example.gerenciamentoprojetos.controller;
 
-import com.exemplo.demo.model.Tarefa;
-import com.exemplo.demo.service.TarefaService;
+import com.example.gerenciamentoprojetos.model.Tarefa;
+import com.example.gerenciamentoprojetos.service.TarefaService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

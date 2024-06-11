@@ -1,6 +1,11 @@
-package model;
-
-import javax.persistence.*;
+package com.example.gerenciamentoprojetos.model;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.OneToMany;
+import javax.persistence.CascadeType;
+import javax.persistence.FetchType;
 import java.util.List;
 
 @Entity

@@ -1,4 +1,4 @@
-package model;
+package com.example.gerenciamentoprojetos.model;
 
 
 import javax.persistence.*;
